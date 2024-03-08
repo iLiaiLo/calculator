@@ -1,13 +1,75 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container{
+  position:absolute;
+  top:20vh;
+  left:50vw;
+  transform: translate(-50%,-10vh);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.calculator{
+  display: flex;
+  align-items: flex-start;
+  gap:10px;
+  width:510px;
 }
+.numbers{
+  width:250px;
+  height:400px;
+  display:flex;
+  flex-wrap: wrap;
+  background-color: lightblue;
+  align-items: center;
+  justify-content: center;
+}
+.numbers>button{
+  width:50px;
+  height:50px;
+  font-size:30px;
+  border:none;
+  background-color: lightslategray;
+  color:white;
+  margin:0 10px 0 10px;
+}
+.signs{
+  width:250px;
+  height:400px;
+  display:flex;
+  flex-wrap: wrap;
+  background-color: lightblue;
+  align-items: center;
+  justify-content: center;
+}
+.signs>button{
+  width:50px;
+  height:50px;
+  font-size:30px;
+  border:none;
+  background-color: lightslategray;
+  color:white;
+  margin:0 10px 0 10px;
+}
+.eq_container{
+  display: flex;
+  width:510px;
+  height:50px;
+  margin-bottom: 10px;
+}
+.expression{
+  width:100%;
+  background-color: rgb(106, 106, 173);
+  border:none;
+  font-size:25px;
+  color:white;
+}
+.expression:focus{
+  outline: none;
+}
+button:hover{
+  cursor:pointer;
+  background-color:rgb(73, 99, 126);
+}
+@media screen and (max-width: 600px) {
+  .container{
+      width:100%;
+  }
+}
+
